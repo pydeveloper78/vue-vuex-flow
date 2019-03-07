@@ -1,0 +1,47 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700)
+@import '~@/assets/css/mq.sass'
+html,body
+	height: 100%
+body
+	background: #efefef
+	font-family: 'Open Sans', sans-serif
+	background: url(../img/housebg5.jpg) no-repeat top center
+	background-size: cover
+.content-wrap
+	background: #fff
+	border-radius: 25px
+	-moz-border-radius: 25px
+	-webkit-border-radius: 25px
+	padding: 40px
+	width: 100%
+.quiz-subtitle
+	font-weight: 300
+	font-size: 30px
+	color: #555
+	text-align: center
+	@include non-desktop
+		font-size: 22px
+.vertical-middle > [class^="col-"],
+.vertical-middle > [class*="col-"]
+	vertical-align: middle
+	float: none
+	@include desktop
+		display: inline-block
+.btn-wrapper
+	padding-top: 40px
+	@include non-desktop
+		padding-top: 20px
+.q-answer
+	margin: 15px 0
+/* Only for input validation */
+.input.is-danger
+	border-color: #ff3860
+.help.is-danger
+	color: #ff3860
+.btn.active:focus,
+.btn:focus
+	outline: none
+.btn.active
+	box-shadow: none
+.btn-blue
+	background: #38B4CD !important
